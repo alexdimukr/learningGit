@@ -1,6 +1,6 @@
-package com.DSN.glue;
+package com.BROKEN.glue;
 
-import com.DSN.framework.Browser;
+import com.BROKEN.framework.Browser;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -14,7 +14,7 @@ public class Hooks {
         Browser.get().get("http://weirdpage.com");
     }
 
-    @AfterMethod(order = 2)
+    @AfterMethod
     public void afterScenario() {
         Browser.close();
     }

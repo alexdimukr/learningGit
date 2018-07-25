@@ -1,4 +1,4 @@
-package com.DSN.locators;
+package com.BROKEN.locators;
 
 import org.openqa.selenium.By;
 

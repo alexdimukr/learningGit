@@ -1,4 +1,4 @@
-package com.DSN.framework;
+package com.BROKEN.framework;
 
 public abstract class BasePage {
 

@@ -1,8 +1,8 @@
-package com.DSN.pageObjects;
+package com.BROKEN.pageObjects;
 
-import com.DSN.framework.BasePage;
-import com.DSN.framework.Browser;
-import com.DSN.locators.HelloFreshLocators;
+import com.BROKEN.framework.BasePage;
+import com.BROKEN.framework.Browser;
+import com.BROKEN.locators.HelloFreshLocators;
 import org.openqa.selenium.WebElement;
 
 public class HelloFreshPage extends BasePage {

@@ -1,4 +1,4 @@
-package com.DSN.framework;
+package com.BROKEN.framework;
 
 public class Global {
     public static final String URL_PRJ_DEV      = "https://www.google.com.ua/";

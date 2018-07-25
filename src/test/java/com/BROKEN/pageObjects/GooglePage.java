@@ -1,10 +1,9 @@
-package com.DSN.pageObjects;
+package com.BROKEN.pageObjects;
 
-import com.DSN.framework.BasePage;
-import com.DSN.framework.Browser;
-import com.DSN.framework.Log;
+import com.BROKEN.framework.BasePage;
+import com.BROKEN.framework.Browser;
+import com.BROKEN.framework.Log;
 
-import org.apache.xpath.operations.String;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -35,5 +34,10 @@ public class GooglePage extends BasePage {
 
     public boolean isResultProvided (){
         return Browser.hasElement(By.xpath(String.format(SEARCH_RESULT_LOCATOR, 1)));
+    }
+
+    public void navigateToHomePage() {
+        Browser.get().get(Browser.getURL());
+        Browser.waitForAngular();
     }
 }
