@@ -1,6 +1,7 @@
 package com.DSN.framework;
 
 import java.util.ArrayList;
+
 import org.apache.log4j.Logger;
 
 public class Log extends Logger {
@@ -9,7 +10,7 @@ public class Log extends Logger {
 		super(name);
 	}
 
-	public static ArrayList<String> sessionLog = new ArrayList<String>();
+	public static ArrayList<String> sessionLog = new ArrayList<>();
 
 	public static void info(String message) {
 		sessionLog.add(message);

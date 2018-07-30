@@ -8,7 +8,7 @@ Feature: Basic feature for HelloFreshDemo
     When I click "Log in"
     And I Enter email = "email@mail.com"
     And I Enter password = "132456"
-    And I click "Login" to submit
+    And I click Login to submit
     Then I should see message "Incorrect username or password."
 
   Scenario: Click plans

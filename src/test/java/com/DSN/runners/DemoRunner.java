@@ -8,17 +8,17 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 @CucumberOptions(features = "src/test/resources/features/Demo.feature",
-        glue = "com.DSN.glue",
-        format = {"pretty", "json:target/Demo.json"})
+    glue = "com.DSN.glue",
+    plugin = {"pretty", "json:target/Demo.json"})
 public class DemoRunner extends AbstractTestNGCucumberTests {
-    @BeforeClass
-    public static void setUp() {
-        Browser.setURL(Global.DEF_URL);
-        Browser.setUSER(Global.eLoginDT.admin);
-    }
+  @BeforeClass
+  public static void setUp() {
+    Browser.setURL(Global.DEF_URL);
+    Browser.setUSER(Global.eLoginDT.admin);
+  }
 
-    @AfterClass
-    public static void tearDown(){
-        Browser.close();
-    }
+  @AfterClass
+  public static void tearDown(){
+    Browser.close();
+  }
 }
