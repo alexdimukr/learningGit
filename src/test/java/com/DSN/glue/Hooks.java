@@ -14,17 +14,16 @@ public class Hooks {
         Browser.get().get("http://weirdpage.com");
     }
 
-    @AfterMethod(order = 2)
+//  @AfterMethod
+//  public void embedScreenshot(Scenario scenario){
+//    if (scenario.isFailed()) {
+//      final byte[] screenshot = ((TakesScreenshot)Browser.get()).getScreenshotAs(OutputType.BYTES);
+//      scenario.embed(screenshot, "image/png");
+//    }
+//  }
+
+    @After (order = 3)
     public void afterScenario() {
         Browser.close();
     }
-
-    @After(order = 3)
-    public void embedScreenshot(Scenario scenario){
-        if (scenario.isFailed()) {
-            final byte[] screenshot = ((TakesScreenshot)Browser.get()).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot, "image/png");
-        }
-    }
-
 }

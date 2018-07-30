@@ -29,8 +29,8 @@ public class HelloFreshPage extends BasePage {
     }
 
     public void enterPassword(String password) {
-        WebElement emailElement = Browser.get().findElement(HelloFreshLocators.PASSWORD_LOCATOR.getLocator());
-        emailElement.sendKeys(password);
+        WebElement passwordElement = Browser.get().findElement(HelloFreshLocators.PASSWORD_LOCATOR.getLocator());
+      passwordElement.sendKeys(password);
     }
 
     public String getIncorrectMessageFromLoginWindow() {
@@ -43,4 +43,8 @@ public class HelloFreshPage extends BasePage {
         return Browser.get().getCurrentUrl();
     }
 
+
+    public void clickSubmit() {
+      Browser.get().findElement(HelloFreshLocators.SUBMIT_BUTTON_LOCATOR.getLocator()).click();
+    }
 }
